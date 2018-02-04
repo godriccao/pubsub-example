@@ -22,7 +22,7 @@ func main() {
 	}
 
 	// Sets the name for the new topic.
-	topic := "dinner"
+	topic := os.Getenv("TOPIC")
 	msg := "蒙蒙下班了？🐖回家晚点，晚上吃草"
 
 	t := client.Topic(topic)

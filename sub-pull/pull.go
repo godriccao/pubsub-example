@@ -22,7 +22,7 @@ func main() {
 		log.Fatalf("failed to create client: %v", err)
 	}
 
-	name := os.Getenv("SUBSCRIBER_NAME")
+	name := os.Getenv("PULL_SUBSCRIBER_NAME")
 	var mu sync.Mutex
 	received := 0
 
